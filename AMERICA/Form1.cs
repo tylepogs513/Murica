@@ -31,14 +31,22 @@ namespace AMERICA
             SolidBrush redBrush = new SolidBrush(Color.DarkRed);
             SolidBrush blueBrush = new SolidBrush(Color.Blue);
 
-            g.Clear(Color.White);
+            g.Clear(Color.Black);
 
-            g.FillRectangle(redBrush, 50, 100, 260, 160);
-            g.FillRectangle(blueBrush, 50, 100, 100, 80);
+            //back of flag
+            g.FillRectangle(whiteBrush, 50, 100, 240, 130);
 
             //stripes
-            g.FillRectangle(whiteBrush, 125, 100, 75, 20);
+            g.FillRectangle(redBrush, 50, 100, 240, 10);
+            g.FillRectangle(redBrush, 50, 120, 240, 10);
+            g.FillRectangle(redBrush, 50, 140, 240, 10);
+            g.FillRectangle(redBrush, 50, 160, 240, 10);
+            g.FillRectangle(redBrush, 50, 180, 240, 10);
+            g.FillRectangle(redBrush, 50, 200, 240, 10);
+            g.FillRectangle(redBrush, 50, 220, 240, 10);
 
+            //starbox
+            g.FillRectangle(blueBrush, 50, 100, 100, 60);
 
         }
     }
