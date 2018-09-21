@@ -30,10 +30,11 @@ namespace AMERICA
             SolidBrush whiteBrush = new SolidBrush(Color.White);
             SolidBrush redBrush = new SolidBrush(Color.DarkRed);
             SolidBrush blueBrush = new SolidBrush(Color.Blue);
+            Pen whitePen = new Pen(Color.White, 5);
 
             g.Clear(Color.Black);
 
-            //back of flag
+            //back of flag 
             g.FillRectangle(whiteBrush, 50, 100, 240, 130);
 
             //stripes
@@ -47,7 +48,6 @@ namespace AMERICA
 
             //starbox
             g.FillRectangle(blueBrush, 50, 100, 100, 60);
-
         }
     }
 }
